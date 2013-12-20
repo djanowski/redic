@@ -47,8 +47,7 @@ test "encoding" do |c|
   c.call("SET", "foo", "שלום")
 
   assert_equal "Shalom שלום", "Shalom " + c.call("GET", "foo")
-
-end if defined?(Encoding)
+end
 
 test "errors in pipeline" do |c|
   c.queue("SET", "foo", "bar")
