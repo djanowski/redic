@@ -1,4 +1,4 @@
-require File.expand_path("../lib/redic", File.dirname(__FILE__))
+require_relative "prelude"
 
 setup do
   Redic.new("unix:///tmp/redis.sock")
